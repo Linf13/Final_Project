@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn ease-in-out 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    animation: slideInDown ease-in-out 1s;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-bar button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#business-list {
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.business {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    animation: fadeIn ease-in-out 1s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.business:hover {
+    transform: scale(1.05);
+}
+
+.business h2 {
+    margin-bottom: 5px;
+    animation: fadeInUp ease-in-out 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.business a {
+    text-decoration: none;
+    color: #3498db;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.business a:hover {
+    color: #207bb5;
+}
+
+.map-container {
+    height: 150px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: slideInUp ease-in-out 1s;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-bar input,
+    #search-bar button {
+        width: 100%;
+    }
+
+    .business {
+        padding: 10px;
+    }
+}
+
+
+.business h2::before {
+    content: '\f02d'; 
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+}

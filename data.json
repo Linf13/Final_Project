@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Chipotle",
+        "category": "Restaurant",
+        "address": "123 Main St",
+        "contact": "973-555-1234",
+        "hours": "Mon-Sat, 10 am - 9 pm",
+        "services": "Breakfast, Lunch, Dinner",
+        "rating": 4.2,
+        "reviews": 10
+    },
+    {
+        "name": "Caldwell University Book Store",
+        "category": "Shop",
+        "address": "456 Oak St",
+        "contact": "973-755-5678",
+        "hours": "Mon-Fri, 9 am - 7 pm",
+        "services": "Books, Magazines, Coffee",
+        "rating": 4.8,
+        "reviews": 15
+    },
+    {
+        "name": "Verizon",
+        "category": "Services",
+        "address": "789 Tech Lane",
+        "contact": "973-595-9876",
+        "hours": "Mon-Sun, 8 am - 6 pm",
+        "services": "Computer Repair, Smartphone Fix",
+        "rating": 4.5,
+        "reviews": 12
+    },
+    {
+        "name": "Embodi Fitness",
+        "category": "Fitness",
+        "address": "321 Fitness Ave",
+        "contact": "555-5432",
+        "hours": "Mon-Sat, 6 am - 9 pm",
+        "services": "Yoga, Cardio, Weight Training",
+        "rating": 4.9,
+        "reviews": 20
+    }
+]
