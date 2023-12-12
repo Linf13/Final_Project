@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', function ()
         <br>
         <strong>Reviews:</strong> ${business.reviews}
         </p>
-        <a href="#">Read Reviews</a>
         
-        
+    
         </div>
         <details><summary>Learn more</summary>
         ${business.name}
