@@ -120,7 +120,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -153,8 +153,5 @@ footer {
 }
 
 
-.business h2::before {
-    content: '\f02d'; 
-    font-family: 'FontAwesome';
-    margin-right: 5px;
-}
+
+

@@ -1,10 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () 
+{
     
     
     function createBusinessArticle(business) {
         const article = document.createElement('article');
         article.className = 'business';
-        
+        article.setAttribute('data-name', business.name);
+
+
+
         article.innerHTML = `
         <h2>${business.name}</h2>
         <p>Category: ${business.category}</p>
@@ -27,20 +31,37 @@ document.addEventListener('DOMContentLoaded', function () {
         ${business.services}
         </details>
         `;
-        
+
+       document.getElementById('search-input').addEventListener('input', searchBusiness);
+
+       function searchBusiness() {
+            const searchInput = document.getElementById('search-input').value.toLowerCase();
+            const businessArticles = document.querySelectorAll('.business');
+    
+            businessArticles.forEach((article) => {
+                const businessName = article.getAttribute('data-name').toLowerCase();
+                if (businessName.includes(searchInput)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
         return article;
+
+        
     }
+    
     
     
     const businessList = document.getElementById('business-list');
     
     
-    // var dataList;
 
     fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        // dataList = data;        
+                
         data.forEach(business => {
             const businessArticle = createBusinessArticle(business);
             businessList.appendChild(businessArticle);
